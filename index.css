@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+p,a,.nav-item {
+    color:  hsl(210, 1%, 64%)
+}
+
+
+
+.nav-item:hover {
+    color:  hsl(0, 0%, 39%) 
+}
+h1{
+    font-size: 50px;
+}
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+
+li + li {
+    margin-left: 1em;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:1.5em;
+    position: relative;
+    z-index: 5;
+    background-color:#fff   
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 98%);
+    padding-right: 0em;
+    padding-top:5em;
+}
+
+.intro-right-side{
+    position: relative;
+    background-image: url('./images/bg-intro-desktop.svg');
+    bottom:320px; 
+    z-index:2;
+    background-position: left;
+}
+.intro-logo {
+    position: relative;
+    left: 130px;
+    top:100px;
+}
+
+.services-items-container {
+    display: flex;
+    justify-content: space-between;
+}
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.thumbnails a {
+    color:rgb(94, 94, 247);
+    font-size: 13px;
+}
+
+.thumbnail,.services-items-container  > div{
+    width: 20%;
+}
+.thumbnail-img > img {
+ width: 100%;
+}
+.btn-request {
+    font-size: 13;
+    padding:0.7em;
+    background-image: linear-gradient(45deg,hsl(136, 65%, 51%)40%,hsl(192, 70%, 51%));
+    color:#fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+section {
+    padding: 10em;
+    padding-bottom: 5em;
+    padding-top: 5em
+}
+.services{
+    background-color: hsl(0, 0%, 96%);
+    position: relative;
+    bottom:450px;
+}
+.articles {
+   position: relative;
+   bottom:400px;
+}
+
+footer {
+    padding:5em;
+    background-color: hsl(233, 26%, 24%);
+    color:#fff;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-logo{
+    color:#fff;
+}
+.up-arrow{
+    text-align: right;
+    border-radius: 10px;
+    display: block;
+    padding:1em;
+}
+
+.up-arrow > img {
+    width: 50px;
+}
